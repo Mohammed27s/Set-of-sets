@@ -1,0 +1,40 @@
+import java.util.HashSet;
+
+//Set of Sets
+public class setsOf {
+
+    public static void main(String[] args){
+
+
+        HashSet<HashSet<Integer>> combineSet = new HashSet<>();
+
+        HashSet<Integer> set1 = new HashSet<>();
+
+        set1.add(12);
+        set1.add(90);
+        set1.add(80);
+
+        HashSet<Integer> set2 = new HashSet<>();
+
+        set2.add(23);
+        set2.add(90);
+        set2.add(76);
+        set2.add(10);
+
+
+        combineSet.add(set1);
+        combineSet.add(set2);
+
+        combineSet.equals(set1.addAll(set2));
+
+
+        System.out.println("all the unique integers from all sets combined "+combineSet);
+
+
+
+
+
+
+    }
+
+}
